@@ -73,7 +73,7 @@ if args.external:
             ),
         ]
         answers = inquirer.prompt(question)
-        selection = answers.get("viq_selection")[0]
+        selection = answers.get("viq_selection").split("-")[0]
         selection = int(selection)
 
         if selection != current_viq:
@@ -98,7 +98,7 @@ def main():
             "ppsk_type",
             message="Use the arrow keys to make your selection, then press enter to continue:",
             choices=[
-                "0 - ** Cancel and Quit **",
+                "22 - ** Cancel and Quit **",
                 "1 - Cloud PPSK Groups",
                 "2 - Local PPSK Groups",
                 "3 - All PPSK Groups",
@@ -107,7 +107,7 @@ def main():
     ]
     answers = inquirer.prompt(question)
     # pprint(answers)
-    selection = answers.get("ppsk_type")[0]
+    selection = answers.get("ppsk_type").split("-")[0]
     selection = int(selection)
     # print(selection)
     # return
@@ -195,7 +195,7 @@ def main():
     ]
     answers = inquirer.prompt(question)
     # pprint(answers)
-    selection = answers.get("group")[0]
+    selection = answers.get("group").split("-")[0]
     selection = int(selection)
     print(selection)
     # return
@@ -285,7 +285,7 @@ def main():
     ]
     answers = inquirer.prompt(question)
     # pprint(answers)
-    selection = answers.get("continue_mode")[0]
+    selection = answers.get("continue_mode").split("-")[0]
     selection = int(selection)
 
     if selection == 0:
