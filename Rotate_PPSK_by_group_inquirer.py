@@ -11,7 +11,7 @@ from lib.xiq_api import XIQ, logger
 ############################################
 ###### User Variables
 ############################################
-_XIQ_API_token = 'eyJraWQiOiIxNzhlZDM3NTVjY2U0YWEzODg5MTY5N2YyNjFlMGUzZCIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJtamZyaXNieUBpY2xvdWQuY29tIiwidXNlcl9pZCI6MTg2ODc1NzEsInJvbGUiOiJBZG1pbmlzdHJhdG9yIiwiY3VzdG9tZXJfaWQiOjE4Njg3MjIxLCJjdXN0b21lcl9tb2RlIjowLCJoaXFfZW5hYmxlZCI6ZmFsc2UsIm93bmVyX2lkIjoxNTc4NzEsIm9yZ19pZCI6MCwiZGF0YV9jZW50ZXIiOiJVU19FYXN0Iiwic2hhcmQiOiJVUyIsInF1b3RhIjoiNzUwMDt3PTM2MDAiLCJqdGkiOiJkNTY5NmM3NjljYWM0ODZiOTIwMjY2MjE1ZmU0OGM4YiIsImlzcyI6Imh0dHBzOi8vdXMwLmV4dHJlbWVjbG91ZGlxLmNvbSIsImlhdCI6MTY5Njk4MzQ0MCwiZXhwIjoxNjk3MDY5ODQwfQ.pSE0STJe6tA7BncvD6TWObUD4ihEBvNVqD2T4wPPRGAkjKrQcQ-WZ00aEeEo3b9Ec2-Pa9xI0cBq5DMMJ3RLDx-0L-FXma94PWO-NLRtTKaULTXectgrF5hyK9XYRXa3y41QTsYGjO59wGa_zipLdsuKN_EdoIR-Cq0YxJwJimnRp4hfM-gn2rnH4UtuiyBg1jW0pp6a3zGu7KrHI9APUW1av1-rpdyj2ks6W9B7OsnWdjfdzrlMzf6CZMSbfDLKE44b4I8EG6bWF4GhWS_9OtzBIfcoArcmqTOjSIItuFCSbiugUCzs39Fa87cGKsOOci3onMlEZ8u5Y4dP-EppXw'      # Enter XIQ auth bearer token
+_XIQ_API_token = ''      # Enter XIQ auth bearer token
 _pageSize = 10  # number of records to pull for each page (max 100)
 
 _script_name = "Rotate_PPSK_by_group"
@@ -98,7 +98,7 @@ def main():
             "ppsk_type",
             message="Use the arrow keys to make your selection, then press enter to continue:",
             choices=[
-                "22 - ** Cancel and Quit **",
+                "0 - ** Cancel and Quit **",
                 "1 - Cloud PPSK Groups",
                 "2 - Local PPSK Groups",
                 "3 - All PPSK Groups",
