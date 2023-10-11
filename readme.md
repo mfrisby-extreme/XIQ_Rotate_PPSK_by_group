@@ -7,6 +7,12 @@ When the script completes, it will generate a csv file adjacent to the script th
 
 Optionally, you may also save the current username/password list to a csv file without changing the passwords.
 
+There are two version of the script in the repository.  They both perform the same functions.  
+
+`Rotate_PPSK_by_group.py` - This script leverages a standard prompt->user input (selection number) to walk the user through executing the script
+
+`Rotate_PPSK_by_group_inquirer.py` - This is an alternate script which uses the python inquirer library to provide a more interactive interface whereby 
+the user may use the arrow keys to select the desired options at each step in the script
 
 ## Needed files
 Download all of the files in the repository and place them into a folder somewhere on your PC.
